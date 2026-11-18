@@ -9,7 +9,7 @@ A: 6061-T6 aluminum alloy with oxidized surface, connectors are hot-dip galvaniz
 A: Yes. Double PVC-coated polyester, waterproof and UV-resistant, flame retardant to DIN4102 B1 (M2).
 
 **Q: Warranty?**
-A: 5 years.
+A: 2–3 years. If the roof cover ages, you only need to replace the PVC cover; the aluminum frame lasts many years.
 
 **Q: How do you fix the tent on the ground?**
 A: Depends on the ground: expansion bolts on concrete/asphalt, steel anchors on grass/sand, weight plates on marble/tile. What's the ground at your site?
@@ -28,3 +28,15 @@ A: Size can be customized (length in 3 m or 5 m modules). Frame comes in white o
 
 **Q: Do you provide installation?**
 A: （待用户补充：是否提供安装指导、视频，或派工程师，以及费用）
+
+**Q: Lighting included?**
+A: Lights are not included, so you can choose the style you like locally. Chandeliers and string lights can be hung on the frame.
+
+**Q: Installation?**
+A: Bolt-connected, no welding needed. We provide installation drawings and videos.（不承诺在线指导）
+
+**Q: Flooring?**
+A: Optional raised platform floor: aluminum frame with wooden boards.（不提地毯）
+
+**Q: Can I pay in other currencies?**
+A: We accept USD and RMB.

@@ -1,0 +1,63 @@
+﻿款式,宽m,长m,面积㎡,边高m,顶高m,每榀立柱,版式,文件,原文件名,顶高公式核对
+A-Frame,6,10,60,2.5,3.6,,截面平面图,A-Frame/A-Frame_6x10m_截面平面图_E2.5_R3.6.png,A-Frame Tent 6x10m.png,✓
+A-Frame,6,12,72,2.5,3.6,,截面平面图,A-Frame/A-Frame_6x12m_截面平面图_E2.5_R3.6.png,A-Frame Tent 6x12m.png,✓
+A-Frame,6,20,120,2.5,3.6,,截面平面图,A-Frame/A-Frame_6x20m_截面平面图_E2.5_R3.6.png,A-Frame Tent 6x20m.png,✓
+A-Frame,6,30,180,3,3.6,,截面平面图,A-Frame/A-Frame_6x30m_截面平面图_E3_R3.6.png,A-Frame Tent 6x30m.png,⚠ 公式算 4.08m
+A-Frame,10,10,100,,,,三视图,A-Frame/A-Frame_10x10m_三视图.png,10x10m_A-Frame_Tent_drawing.png,
+A-Frame,10,10,100,3,4.8,,截面平面图,A-Frame/A-Frame_10x10m_截面平面图_E3_R4.8.png,A-Frame Tent 10x10m.png,✓
+A-Frame,10,15,150,3,4.8,,截面平面图,A-Frame/A-Frame_10x15m_截面平面图_E3_R4.8.png,A-Frame Tent 10x15m.png,✓
+A-Frame,10,20,200,3,4.8,,截面平面图,A-Frame/A-Frame_10x20m_截面平面图_E3_R4.8.png,A-Frame Tent 10x20m.png,✓
+A-Frame,10,50,500,,,,三视图,A-Frame/A-Frame_10x50m_三视图.png,10x50m_A-shape_tent_drawing.png,
+A-Frame,10,50,500,3,4.8,,截面平面图,A-Frame/A-Frame_10x50m_截面平面图_E3_R4.8.png,A-Frame Tent 10x50m.png,✓
+A-Frame,12,20,240,3,5.1,,截面平面图,A-Frame/A-Frame_12x20m_截面平面图_E3_R5.1.png,A-Frame Tent 12x20m.png,✓
+A-Frame,12,25,300,3,5.1,,截面平面图,A-Frame/A-Frame_12x25m_截面平面图_E3_R5.1.png,A-Frame Tent 12x25m.png,✓
+A-Frame,15,20,300,4,6.3,,截面平面图,A-Frame/A-Frame_15x20m_截面平面图_E4_R6.3.png,A-Frame Tent 15x20m.png,✓
+A-Frame,15,20,300,4,6.3,,截面平面图,A-Frame/A-Frame_15x20m_截面平面图_E4_R6.3_v2.png,A-Frame Tent 15x20m_1.png,✓
+A-Frame,15,25,375,,,,三视图,A-Frame/A-Frame_15x25m_三视图.png,15x25m_A-Frame_Tent_drawing.png,
+A-Frame,15,25,375,4,6.3,,截面平面图,A-Frame/A-Frame_15x25m_截面平面图_E4_R6.3.png,A-Frame Tent 15x25m.png,✓
+A-Frame,15,30,450,4,6.3,,截面平面图,A-Frame/A-Frame_15x30m_截面平面图_E4_R6.3.png,A-Frame Tent 15x30m.png,✓
+A-Frame,15,35,525,4,6.3,,截面平面图,A-Frame/A-Frame_15x35m_截面平面图_E4_R6.3.png,A-Frame Tent 15x35m.png,✓
+A-Frame,15,40,600,4,6.3,,截面平面图,A-Frame/A-Frame_15x40m_截面平面图_E4_R6.3.png,A-Frame Tent 15x40m.png,✓
+A-Frame,15,70,1050,4,6.3,,截面平面图,A-Frame/A-Frame_15x70m_截面平面图_E4_R6.3.png,A-Frame Tent 15x70m.png,✓
+A-Frame,18,20,360,4,6.8,,截面平面图,A-Frame/A-Frame_18x20m_截面平面图_E4_R6.8.png,A-Frame Tent 18x20m.png,✓
+A-Frame,20,20,400,5,7.1,,截面平面图,A-Frame/A-Frame_20x20m_截面平面图_E5_R7.1.png,A-Frame Tent 20x20m.png,⚠ 公式算 8.10m
+A-Frame,20,25,500,,,,三视图,A-Frame/A-Frame_20x25m_三视图.png,20x25m_A-Frame_Tent_drawing.png,
+A-Frame,20,25,500,4,7.1,,截面平面图,A-Frame/A-Frame_20x25m_截面平面图_E4_R7.1.png,A-Frame Tent 20x25m.png,✓
+A-Frame,20,30,600,,,,三视图,A-Frame/A-Frame_20x30m_三视图.png,20x30m_A-Frame_Tent_drawing.png,
+A-Frame,20,30,600,4,7.1,,截面平面图,A-Frame/A-Frame_20x30m_截面平面图_E4_R7.1.png,A-Frame Tent 20x30m.png,✓
+A-Frame,20,40,800,,,,三视图,A-Frame/A-Frame_20x40m_三视图.png,20x40m_A-Frame_Tent_drawing.png,
+A-Frame,20,40,800,4,7.1,,截面平面图,A-Frame/A-Frame_20x40m_截面平面图_E4_R7.1.png,A-Frame Tent 20x40m.png,✓
+A-Frame,20,60,1200,,,,三视图,A-Frame/A-Frame_20x60m_三视图.png,20x60m_A-Frame_Tent_drawing.png,
+A-Frame,25,40,1000,4,7.9,,截面平面图,A-Frame/A-Frame_25x40m_截面平面图_E4_R7.9.png,A-Frame Tent 25x40m.png,✓
+A-Frame,30,30,900,4,8.6,,截面平面图,A-Frame/A-Frame_30x30m_截面平面图_E4_R8.6.png,A-Frame Tent 30x30m.png,✓
+A-Frame,30,50,1500,4,8.6,,截面平面图,A-Frame/A-Frame_30x50m_截面平面图_E4_R8.6.png,A-Frame Tent 30x50m eave4.png,✓
+A-Frame,30,50,1500,6,10.5,,截面平面图,A-Frame/A-Frame_30x50m_截面平面图_E6_R10.5.png,A-Frame Tent 30x50m.png,⚠ 公式算 10.65m
+A-Frame,30,80,2400,6,10.5,,截面平面图,A-Frame/A-Frame_30x80m_截面平面图_E6_R10.5.png,A-Frame Tent 30x80m.png,⚠ 公式算 10.65m
+A-Frame,40,40,1600,4,10.2,,截面平面图,A-Frame/A-Frame_40x40m_截面平面图_E4_R10.2.png,A-Frame Tent 40x40m.png,✓
+A-Frame,40,60,2400,4,10.2,,截面平面图,A-Frame/A-Frame_40x60m_截面平面图_E4_R10.2.png,A-Frame Tent 40x60m.png,✓
+A-Frame,40,80,3200,,,,三视图,A-Frame/A-Frame_40x80m_三视图.png,40x80m_A-Frame_Tent_drawing.png,
+A-Frame,40,80,3200,4,10.2,,截面平面图,A-Frame/A-Frame_40x80m_截面平面图_E4_R10.2.png,A-Frame Tent 40x80m.png,✓
+Atrium,10,10,100,3,4.8,3,截面平面图,Atrium/Atrium_10x10m_截面平面图_E3_R4.8.png,Atrium Tent 10x10m.png,⚠ 公式算 6.00m
+Atrium,10,15,150,3,4.8,3,截面平面图,Atrium/Atrium_10x15m_截面平面图_E3_R4.8.png,Atrium Tent 10x15m.png,⚠ 公式算 6.00m
+Atrium,10,20,200,3,4.8,3,截面平面图,Atrium/Atrium_10x20m_截面平面图_E3_R4.8.png,Atrium Tent 10x20m ridge4.8.png,⚠ 公式算 6.00m
+Atrium,10,20,200,,,3,截面平面图,Atrium/Atrium_10x20m_截面平面图.png,Atrium Tent 10x20m.png,
+Atrium,10,25,250,,,,三视图,Atrium/Atrium_10x25m_三视图.png,10x25m_Atrium_Tent_drawing.png,
+Atrium,10,40,400,4,7,3,截面平面图,Atrium/Atrium_10x40m_截面平面图_E4_R7.png,Atrium Tent 10x40m.png,✓
+Atrium,15,20,300,3,6.525,4,截面平面图,Atrium/Atrium_15x20m_截面平面图_E3_R6.525.png,Atrium Tent 15x20m eave3.png,✓
+Atrium,15,20,300,4,7.9,4,截面平面图,Atrium/Atrium_15x20m_截面平面图_E4_R7.9.png,Atrium Tent 15x20m.png,⚠ 公式算 7.53m
+Atrium,15,25,375,,,,三视图,Atrium/Atrium_15x25m_三视图.png,15x25m_Atrium_Tent_drawing_1.png,
+Atrium,15,30,450,4,7.9,4,截面平面图,Atrium/Atrium_15x30m_截面平面图_E4_R7.9.png,Atrium Tent 15x30m.png,⚠ 公式算 7.53m
+Atrium,15,40,600,4,7.9,4,截面平面图,Atrium/Atrium_15x40m_截面平面图_E4_R7.9.png,Atrium Tent 15x40m.png,⚠ 公式算 7.53m
+Atrium,20,30,600,4,8.3,5,截面平面图,Atrium/Atrium_20x30m_截面平面图_E4_R8.3_结构简图.png,Atrium Tent 20x30m 结构简图.png,✓
+Atrium,20,30,600,4,8.3,5,截面平面图,Atrium/Atrium_20x30m_截面平面图_E4_R8.3.png,Atrium Tent 20x30m.png,✓
+Atrium,20,40,800,4,8.3,5,截面平面图,Atrium/Atrium_20x40m_截面平面图_E4_R8.3.png,Atrium Tent 20x40m.png,✓
+Atrium,20,50,1000,4,8.3,5,截面平面图,Atrium/Atrium_20x50m_截面平面图_E4_R8.3.png,Atrium Tent 20x50m.png,✓
+Atrium,20,60,1200,,,,三视图,Atrium/Atrium_20x60m_三视图.png,20x60m_Atrium_Tent_drawing.png,
+Atrium,30,20,600,4,9.85,7,截面平面图,Atrium/Atrium_30x20m_截面平面图_E4_R9.85.png,Atrium Tent 30x20m.png,✓
+Atrium,30,50,1500,,,7,截面平面图,Atrium/Atrium_30x50m_截面平面图.png,Atrium Tent 30x50m.png,
+Atrium,30,60,1800,,,,三视图,Atrium/Atrium_30x60m_三视图.png,30x60m_Atrium_Tent_drawing.png,
+Atrium,40,40,1600,4,11.5,9,截面平面图,Atrium/Atrium_40x40m_截面平面图_E4_R11.5.png,Atrium Tent 40x40m.png,⚠ 公式算 11.40m
+Dome,20,50,1000,,,,3D,其他/Dome_20x50m_3D.png,20x50m_Dome_Tent_3D.png,
+Dome,20,50,1000,,,,框架图,其他/Dome_20x50m_框架图.png,20x50m_Dome_Tent_Frame.png,
+Pagoda,5,5,25,,,,三视图,其他/Pagoda_5x5m_三视图.png,5x5_pagoda_tent_drawing.png,
+Polygon,30,60,1800,,,,三视图,其他/Polygon_30x60m_三视图.png,30x60m_Polygon_Tent_drawing.png,

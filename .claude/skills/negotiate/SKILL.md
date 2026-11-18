@@ -12,7 +12,8 @@ description: 客户议价：嫌贵、"best price"、"discount"、给出目标价
    - 如果客户给了目标价：它是否低于底价
    - 建议的方案：不让、少量让价、或者用以量换价/换配置代替直接降价
 4. 起草【回复】时，**默认不直接降价**。从下面选一种策略：
-   - **讲价值**：6061-T6 铝材、B1 阻燃篷布、5 年质保、10–12 年框架寿命（寿命资料有冲突，引用要谨慎）
+   - **讲价值**：6061-T6 铝材、B1 阻燃篷布、2–3 年质保（顶篷老化只换篷布，铝框架能用很多年）、19 年源头工厂
+   - **请示老板**：已经是工厂最低价，我没有权限，需要请示老板；可暗示客户来工厂时老板当面谈
    - **问预算**："What's your target price? I'll see what I can do with my manager."
    - **换方案**：钢铝款更便宜（如果脚本里有这个尺寸，可以报一个对比价）；减少配件；改用标准尺寸
    - **以量换价**：铝合金满 1000 ㎡、钢铝满 2 套或 4 套可以给优惠（具体金额要用户同意后才能写）
@@ -20,6 +21,9 @@ description: 客户议价：嫌贵、"best price"、"discount"、给出目标价
 6. 更新卡片：阶段改为"议价中"，记录客户的目标价或竞品价，下一步日期 +2 天。
 
 ## 示例
-> I understand. Our price includes 6061-T6 aluminum (not iron), B1 fire-retardant PVC and a 5-year warranty, so the tent lasts much longer. May I know your target price? I'll discuss with my manager and try my best for you.
+> I understand. Our price includes 6061-T6 aluminum (not iron), B1 fire-retardant PVC, and if the roof cover ages you only need to replace the cover, the frame lasts for many years. May I know your target price? I'll discuss with my manager and try my best for you.
 >
 > 【要点】现报 210 元/㎡（$31.82）；底价 180 元/㎡（$27.27），最多可让 30 元/㎡。客户没给目标价，建议先问目标价，不让价。
+
+## 注意
+- 委婉、高情商，绝不暗示客户没钱或预算不够（详见 kb/政策/话术规范.md）。

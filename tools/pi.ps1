@@ -85,7 +85,15 @@ try {
   Set-Label '^Add:' "Add: $Country" 1
   Set-Label '^Invoice No:' ("Invoice No: GY{0}" -f (Get-Date -Format 'yyyyMMddHHmm'))
   Set-Label '^Date:' "Date: $today"
-  foreach ($c in $cells) { if ($c.Text -match 'gyales6@') { $c.Value2 = $c.Value2 -replace 'gyales6@', 'sales6@' } }
+  # 对外联系方式（2026-11-18 确认，见 kb/公司信息.md）；银行受益人地址属于银行信息，不改
+  Set-Label '^Supplier:' 'Supplier: SUZHOU GUYUN TENT CO., LTD' 6
+  Set-Label '^Contact:' 'Contact Person: Evelyn,  Email: gysales6@guyuntent.com' 6
+  Set-Label '^WhatsApp' 'WhatsApp/WeChat: +008618706208684' 6
+  Set-Label '^Add:' 'Add: No.1 Chengtai Road South, Taiping Town, Xiangcheng District, Suzhou City, Jiangsu Province, China' 6
+  foreach ($c in $cells) {
+    if ($c.Text -match 'ales6@') { $c.Value2 = ([string]$c.Value2) -replace '\b(gyales6|gysales6|sales6)@', 'gysales6@' }
+    if ($c.Text -match 'Warranty:\s*5 years') { $c.Value2 = ([string]$c.Value2) -replace 'Warranty:\s*5 years', 'Warranty: 2-3 years' }
+  }
 
   # ---------- 4. 规格表 ----------
   $item = Find-Cell '^Item$'

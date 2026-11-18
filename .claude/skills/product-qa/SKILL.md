@@ -19,3 +19,11 @@ description: 客户咨询产品本身：材料、抗风、雪载、寿命、型�
 > A: Yes, the frame is 6061-T6 aluminum with galvanized steel connectors, rated for wind up to 100 km/h. Will the tent be used near the coast or in an open area? Then I can suggest the right profile size.
 >
 > 【要点】抗风值资料冲突（PI 写 100–120，画册写 80–100），这里保守写了 100，请确认。
+
+## 常见问法（来自以往回复）
+- 款式区别：Classic White 性价比高、最受欢迎；Atrium 黑框透明墙、中间屋顶抬高、更高端。
+- 白色经典款内衬纱幔：默认白色，可选其他颜色；婚礼客户大多会加纱幔。
+- 灯光：不包含，让客户在当地挑喜欢的款式（吊灯、串灯可挂在框架上）。
+- 安装：螺栓连接、不用焊接，提供安装图纸和视频；不承诺在线指导。
+- 地板：选配，铝框架加木板的架空地台；不提地毯。
+- 认证：意大利 ECM 认证（EN 13782），不说 CE。
