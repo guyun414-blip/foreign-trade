@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node tools/quote.mjs:*)",
+      "Bash(powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/pi.ps1:*)",
+      "Read(kb/**)",
+      "Read(客户/**)",
+      "Edit(客户/**)",
+      "Write(客户/**)",
+      "Edit(kb/待核实.md)",
+      "Edit(kb/政策/FAQ.md)"
+    ],
+    "deny": [
+      "Read(原始资料/**/*.pdf)",
+      "Read(原始资料/**/*.xls)"
+    ]
+  }
+}

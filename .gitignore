@@ -1,0 +1,13 @@
+# 客户隐私：客户卡片只保存在本机，不进 git
+客户/*
+!客户/_模板.md
+
+# 生成的 PI（含客户信息）
+输出/
+
+# 个人设置
+CLAUDE.local.md
+.claude/settings.local.json
+
+# Office 临时文件
+~$*
