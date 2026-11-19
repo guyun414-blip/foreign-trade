@@ -9,7 +9,7 @@ argument-hint: <系列> <宽x长> [客户名] [国家] [贸易术语] [运费]
 
 ## 步骤
 1. 从参数、客户卡片或聊天中收集以下信息：
-   - 系列：Classic、Wedding、Atrium、Transparent、Curved、Exhibition（款式选不准时问用户）
+   - 系列：Classic、Wedding、Atrium、Transparent、Curved、Exhibition（款式选不准时问用户）。**中庭客户没有特殊说明默认 WT 款（白顶透明墙黑框），模板 `3.1WT  Atrium tent 模板.xlsx`**
    - 尺寸、数量、颜色（可选）
    - 客户名、WhatsApp、国家或地址
    - 贸易术语：默认 CIF，港口按客户 WhatsApp 国家选（kb/政策/交易条款.md）。运费一律由用户提供，**不要自己估**
@@ -53,7 +53,7 @@ argument-hint: <系列> <宽x长> [客户名] [国家] [贸易术语] [运费]
 - 中庭款新版图纸立柱每 5 m 一根（20 m 跨每榀 5 根），旧版"三视图"每榀 4 根，以新版为准。
 
 ## Cowork 云端批量生成报价单（2026-11-19 整理，`tools/报价单_批量生成_LibreOffice.py`）
-1. 把要用的模板（`原始资料/报价模板/1.Classic / 3.Atrium / 5.Curved`）、建构图、产品照片 stage 到云端 `/tmp/q/`，写 `/tmp/q/jobs.json`，一个 job 一份报价单：
+1. 把要用的模板（`原始资料/报价模板/1.Classic / 3.1WT Atrium（中庭默认，复制成 wt.xlsx）/ 5.Curved`）、建构图、产品照片 stage 到云端 `/tmp/q/`，写 `/tmp/q/jobs.json`，一个 job 一份报价单：
    - `tpl` 模板；`out` 文件名；`buyer` `wa` `country` `no`
    - `a9`：产品描述里要替换的文字（顶布/围布颜色、主型材、Warranty 5 years → 2-3 years）
    - `cells`：规格表和价格表单元格（Classic/Atrium：B12 尺寸、D12/E12 宽长、F12 边高、G12 顶高、H12 开间、I12 型材、H15 单价公式如 `=200/6.6`、I17 贸易术语、I18 CBM、I19 重量、I20 运费、I21 总价；Curved 列位置不同：I17 CBM、I18 重量、I19 运费、I20 总价，没有贸易术语行，写在 A19 标签和 A35 条款里）
@@ -64,3 +64,8 @@ argument-hint: <系列> <宽x长> [客户名] [国家] [贸易术语] [运费]
 3. 图片不用 GraphicCrop（Excel/WPS 打开 xls 会丢图），脚本先用 PIL 裁好再放。
 4. 多港口：每个港口单独一份（如 `_CIF_Durban_` 和 `_CIF_WalvisBay_`）；多款式也各一份。
 5. 生成后把每份 PDF 渲染成图看一遍（建构图在第 1 页、没有被切开的表格），再 SendUserFile 给用户并 commit 到 `输出/报价/`；同一客户的旧版本删掉，避免发错。
+
+### 3.1WT Atrium 模板（wt.xlsx）的参数
+- 图片序号：产品照片 `img {"8": ...}`（用 `原始资料/产品照片/Atrium_白顶透明墙_湖边实景.jpg`）；建构图 `sketch [9, 图, 22]`；工厂照片 `factory [5,6,7,34]`。
+- A9 模板原文是 "Top cover: … Transparent  PVC"（两个空格）/ "Side Wall: … White PVC"，跟实际款式反了，要替换成 Top cover White PVC、Side Wall Transparent PVC。
+- E15 写 "White roof / Clear walls\nBlack frame"；单元格位置和 3.Atrium 模板一样（A37 条款、A39 有效期）；I21 要自己写 `=I16+I20`。
