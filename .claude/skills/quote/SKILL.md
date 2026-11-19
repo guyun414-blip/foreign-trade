@@ -67,7 +67,7 @@ argument-hint: <类型> <宽x长> [数量] [透明] [配件]
 - 体积 = 面积 × 0.03 × 1.25 CBM；重量 = 面积 × 8 × 1.25 kg。
 - 顶高：人字顶公式 +1.2 m（见 kb/产品/通用规格.md；20 m 跨、边高 4 m → 8.3 m）。
 - **Facebook 广告引来的都是 WT 中庭篷房客户：客户没有特殊说明时，一律按 WT 款报——模板用 `原始资料/报价模板/3.1WT  Atrium tent 模板.xlsx`**（11-19 用户指定）。
-- **默认款式（11-19 用户纠正）：白色 PVC 顶 + 四周透明墙 + 黑色铝框架**，中间屋顶抬高。产品照片用 `原始资料/产品照片/Atrium_白顶透明墙_湖边实景.jpg`；报价单抬头 E15 写 "White roof / Clear walls, Black frame"，A9 里 Top cover 写 white PVC、Side Wall 写 Transparent PVC。只有客户明确要全透明时才做全透明。
+- **默认款式（11-19 用户纠正）：白色 PVC 顶 + 四周透明墙 + 黑色铝框架**，中间屋顶抬高。产品照片用 `原始资料/产品照片/Atrium_白顶透明墙_湖边实景.jpg`；报价单抬头 E15 写 "White roof / Clear walls, Black frame"，A9 里 Top cover 写 white PVC、Side Wall 写 Transparent PVC。模板 3.1WT 里的透明顶是某个客户的定制，只作版式参考；只有客户明确要透明顶等定制时才改。
 
 ## 赠品（本月付定金才送，说法："本月活动福利，方便你的团队安装"）
 | 订单金额 | 赠品 |

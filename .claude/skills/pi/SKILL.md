@@ -67,5 +67,5 @@ argument-hint: <系列> <宽x长> [客户名] [国家] [贸易术语] [运费]
 
 ### 3.1WT Atrium 模板（wt.xlsx）的参数
 - 图片序号：产品照片 `img {"8": ...}`（用 `原始资料/产品照片/Atrium_白顶透明墙_湖边实景.jpg`）；建构图 `sketch [9, 图, 22]`；工厂照片 `factory [5,6,7,34]`。
-- A9 模板原文是 "Top cover: … Transparent  PVC"（两个空格）/ "Side Wall: … White PVC"，跟实际款式反了，要替换成 Top cover White PVC、Side Wall Transparent PVC。
+- 这份模板原本是埃及客户的**定制单**（客户要透明顶），只当版式参考。默认款式一律是 **白色 PVC 顶、四周透明墙、黑框**：A9 里 "Top cover: … Transparent  PVC"（两个空格）替换成 White PVC，"Side Wall: … White PVC" 替换成 Transparent PVC。只有客户自己要求透明顶等定制时才按客户说的改。
 - E15 写 "White roof / Clear walls\nBlack frame"；单元格位置和 3.Atrium 模板一样（A37 条款、A39 有效期）；I21 要自己写 `=I16+I20`。
