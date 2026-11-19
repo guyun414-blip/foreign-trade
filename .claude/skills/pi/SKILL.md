@@ -49,5 +49,18 @@ argument-hint: <系列> <宽x长> [客户名] [国家] [贸易术语] [运费]
 - 定金取整数，零头放进尾款。
 - 中庭款图纸：每榀 4 根柱、中间抬高；开间超过 8 个只标总长。人字顶按坡度画。
 - 发文件前提醒用户核对：文件名里的尺寸和贸易条款（EXW/CIF、尺寸是否对应客户）、赠品档位、保修期（2–3 年）。
-- 在 Cowork 云端没法运行 pi.ps1（需要 Windows + Excel）：改用 `tools/报价单_参考脚本_LibreOffice.py` 的做法。
+- 在 Cowork 云端没法运行 pi.ps1（需要 Windows + Excel）：改用 `tools/报价单_批量生成_LibreOffice.py`（见下节）。
 - 中庭款新版图纸立柱每 5 m 一根（20 m 跨每榀 5 根），旧版"三视图"每榀 4 根，以新版为准。
+
+## Cowork 云端批量生成报价单（2026-11-19 整理，`tools/报价单_批量生成_LibreOffice.py`）
+1. 把要用的模板（`原始资料/报价模板/1.Classic / 3.Atrium / 5.Curved`）、建构图、产品照片 stage 到云端 `/tmp/q/`，写 `/tmp/q/jobs.json`，一个 job 一份报价单：
+   - `tpl` 模板；`out` 文件名；`buyer` `wa` `country` `no`
+   - `a9`：产品描述里要替换的文字（顶布/围布颜色、主型材、Warranty 5 years → 2-3 years）
+   - `cells`：规格表和价格表单元格（Classic/Atrium：B12 尺寸、D12/E12 宽长、F12 边高、G12 顶高、H12 开间、I12 型材、H15 单价公式如 `=200/6.6`、I17 贸易术语、I18 CBM、I19 重量、I20 运费、I21 总价；Curved 列位置不同：I17 CBM、I18 重量、I19 运费、I20 总价，没有贸易术语行，写在 A19 标签和 A35 条款里）
+   - `img`：产品照片替换；`sketch`：Atrium/Curved 模板自带图位置换成本尺寸建构图；`addsketch`：Classic 模板没有图位，插两行放建构图；`nosketch`：没有对应尺寸的图时删掉模板旧图并写"available on request"
+   - `extras`：配件行（玻璃墙、玻璃门、地板等），插在篷房行下面，Sum 自动改成 SUM 公式；按件计价的加第 7 项 `"pcs"`
+   - `money`：需要显示两位小数的运费、总价单元格（有 extras 时地址顺延）
+2. 版式（用户 11-19 定）：**2 页**。第 1 页：抬头 → 产品描述 → 规格 → 价格 → 总价 → **建构图**；第 2 页：材料配件 → 材料保障 → 固定方式 → 条款和银行信息。打印区域只设 A:J，缩放比例按宽度和两页高度自动算，表格铺满页宽。
+3. 图片不用 GraphicCrop（Excel/WPS 打开 xls 会丢图），脚本先用 PIL 裁好再放。
+4. 多港口：每个港口单独一份（如 `_CIF_Durban_` 和 `_CIF_WalvisBay_`）；多款式也各一份。
+5. 生成后把每份 PDF 渲染成图看一遍（建构图在第 1 页、没有被切开的表格），再 SendUserFile 给用户并 commit 到 `输出/报价/`；同一客户的旧版本删掉，避免发错。

@@ -91,16 +91,11 @@ if (!row) {
     process.exit(2);
   }
   const perM2 = pool.filter((r) => r['计价单位'] === '㎡').sort((a, b) => a['长度m'] - b['长度m']);
-  const lower = perM2.filter((r) => Number(r['长度m']) <= L);
-  if (lower.length) {
-    row = lower[lower.length - 1];
-    matchNote = `表中无${L}米长，按较短档 ${lookupSpan}x${row['长度m']} 计（单价偏高，较稳妥）`;
-    if (row === perM2[perM2.length - 1] && L > Number(row['长度m'])) matchNote = `超出表中最长档，按 ${lookupSpan}x${row['长度m']} 计`;
-  } else {
-    row = perM2[0];
-    matchNote = `短于表中最短档，按 ${lookupSpan}x${row['长度m']} 计 —— 短篷房通常更贵，建议人工确认`;
-    warn.push('长度短于价格表最短档');
-  }
+  // 2026-11-19 用户规则：表里没有的长度，按最接近的长度档报价（距离相同取较短档）
+  const near = [...perM2].sort((x, y) => (Math.abs(x['长度m'] - L) - Math.abs(y['长度m'] - L)) || (x['长度m'] - y['长度m']))[0];
+  row = near;
+  matchNote = `表中无${L}米长，按最接近的 ${lookupSpan}x${row['长度m']} 计`;
+  if (L < Number(perM2[0]['长度m'])) warn.push('长度短于价格表最短档，短篷房通常更贵，建议人工确认');
 }
 
 const unit = row['计价单位'];
@@ -123,7 +118,7 @@ const eave = Number(row['边高m']) || (W >= 15 ? 4 : 3);
 const tableRidge = lookupSpan === W ? Number(row['顶高m']) : 0;
 const ridge = tableRidge || +(W * 0.5 * (W >= 15 ? 0.31 : 0.36) + eave).toFixed(2);
 const ridgeSrc = tableRidge ? '价格表' : '公式';
-const bay = lookupSpan === 10 ? 3 : 5; // 10米跨常规3米开间，其余按模板常规5米
+const bay = 5; // 2026-11-19 纸质报价单：10米跨主管68*121按5米开间（3米开间可改用48*100*3同价）
 
 let subtotalUsd;
 out.push(`【报价草稿·内部】${type === '塔篷' ? '塔篷' : type + '篷房'} ${W}x${L}m × ${opts.qty}  （${matchNote}）`);

@@ -22,9 +22,12 @@
 | 做报价单 / PI 文件 | 先读 kb/政策/报价单检查清单.md |
 | 产品实景照片 | 原始资料/产品照片/ |
 | 客户历史 | 客户/<客户>.md（只读这一张卡片，不翻聊天记录） |
+| 批量更新卡片/客户列表/汇总表 | `python3 tools/更新客户.py updates.json`（格式见脚本头部） |
+| WhatsApp 网页操作 | 先注入 `tools/whatsapp_helpers.js`（hist / insLines / put），见 工作流.md 6.5 |
+| 云端生成报价单 PDF | `tools/报价单_批量生成_LibreOffice.py`，见 pi skill 最后一节 |
 
 ## 速查（已确认，能回答就不读文件）
-6061-T6 aluminum frame, hot-dip galvanized steel connectors | roof 850 g/m², sidewall 650 g/m² double PVC-coated, B1/M2 flame retardant, UV-proof, -30~+70 °C | clear span, no poles inside | warranty 2–3 yrs | 30% deposit / 70% before delivery, T/T or Alibaba TA, USD or RMB | deposit locks tent price, sea freight not locked | lead time 25–30 working days | offer valid 15 days | default quote CIF, port by customer WhatsApp country (freight always from user) | HS 9406900090 | ECM certified (EN 13782), never say CE
+6061-T6 aluminum frame, hot-dip galvanized steel connectors | roof 850 g/m², sidewall 650 g/m² double PVC-coated, B1/M2 flame retardant, UV-proof, -30~+70 °C | clear span, no poles inside | warranty 2–3 yrs | price = 纸质底价+20 RMB (Atrium +110, Curved +30) | 30% deposit / 70% before delivery, T/T or Alibaba TA, USD or RMB | deposit locks tent price, sea freight not locked | lead time 25–30 working days | offer valid 15 days | default quote CIF, port by customer WhatsApp country (freight always from user) | HS 9406900090 | ECM certified (EN 13782), never say CE
 （抗风、雪载、寿命三项资料有冲突，引用时必须在【要点】里提醒用户。）
 
 ## 红线

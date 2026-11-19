@@ -20,6 +20,35 @@ description: 跟进没有回复的客户（已报价后沉默、问完问题后�
 5. 报价已经超过 15 天：在【要点】里提醒"报价已过期，需要确认是否沿用原价"，【回复】里不要承诺按原价执行。
 6. 更新卡片：在"记录"里追加"跟进 N"，并按工作流.md 第 5 节设置下一步日期。
 
+## 报价后沉默：摸清原因（2026-11-18 起）
+目的：弄清客户看了报价不回的原因，方便调整报价方式和广告投放。
+
+**什么时候用**：已报价、我方最后一条消息后客户 ≥2 天没回，且之前没问过原因（2026-11-19 用户改为 2 天）。报价后的第 1 次跟进（+2 天）就直接用这个，替代上表的"确认收到报价"。
+
+**怎么问**：给编号选项，客户回一个数字就行。语气轻松，先说"没关系"，绝不暗示客户没钱。选项按客户情况挑 3–4 个：
+> Hi [名字] 😊 No pressure at all. To help me prepare something that really fits you, may I ask what's holding you back? Just reply with a number:
+> 1️⃣ The budget needs a bit of adjusting
+> 2️⃣ I'd like a different style or size
+> 3️⃣ Shipping / landed cost is unclear (只给了 EXW 的客户用这条)
+> 4️⃣ My event / project is later, no rush yet
+> 5️⃣ Still comparing with other suppliers
+> Whatever it is, I'm happy to adjust the quote for you 🌷
+
+- 只报了 Atrium 的婚礼客户：选项 2 改成 "I'd like to see the more affordable Classic White style"。
+- 只给了 EXW 的：一定放选项 3，并在【要点】提醒用户，客户回 3 就要补 CIF 报价（运费由用户提供）。
+- 法语、葡语、阿拉伯语客户翻译成对应语言。
+
+**客户回复后**：
+1. 在客户卡片加一行 `沉默原因：<预算/款式尺寸/运费不清楚/时间未到/比价/其他：原话摘要>`，同时写进汇总表"沉默原因"列。
+2. 按原因转下一步：预算 → `negotiate`（让价必须用户决定），或推荐经典白/小一点的尺寸；款式尺寸 → `quote`；运费 → 补 CIF；时间未到 → 下一步日期设到客户说的时间前 1 个月；比价 → 讲 19 年工厂、ECM 认证、质保，邀请看工厂视频。
+3. 没回复：按原规则 +7 天再跟进；问过一次原因后不要再问第二次。
+
+**定期汇总**：用户要求时，统计汇总表"沉默原因"列，按报价款式（仅 Atrium / 经典白 / 两款）和贸易术语（EXW / CIF）交叉统计，给出调整报价或广告的建议。
+
+## 客户说"以后再买"（明年、场地在建、要和家人商量）
+- 沉默原因写"时间未到"，然后按 kb/政策/话术规范.md"劝以后再买的客户先付定金"起草：材料刚涨价→付定金锁价、本月赠品、生产时间按客户计划、倒推时间线。不承诺长期免费仓储。
+- 客户回了明确的时间：下一步日期设到那之前 1 个月；没回：+7 天再跟一次。
+
 ## 示例
 第 1 次：
 > Hi Ali, just checking if you received the quotation for the 10x30m clear tent? Happy to send a layout drawing if it helps you present it to your client 😊
