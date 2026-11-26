@@ -29,6 +29,15 @@ argument-hint: <系列> <宽x长> [客户名] [国家] [贸易术语] [运费]
 4. 【回复】示例："Please find the PI attached. Kindly check the details, and once confirmed you can arrange the 30% deposit. Production starts right after we receive it."
 5. 更新卡片：阶段改为"待付款"，记录 PI 文件名和金额。
 
+## ⭐ PI 标准模板（2026-11-22 用户指定，优先用这个）
+- 模板：`原始资料/PI模板/PI Sulaiman 2x 20x40m EXW 2026.11.19 (deposit 35000).pdf`。**PI 是单独的一页式发票，不要拿报价单改抬头当 PI**（11-22 Steven 第一版就是这样做错的）。
+- 生成：`python3 tools/PI_生成_LibreOffice.py job.json`（需要 LibreOffice；Cowork 云端可用），字段说明见脚本头部；logo/签章图在 `原始资料/PI模板/logo.png、sign.png`。示例 job：`输出/PI/job_Steven_2026-11-22.json`。
+- 版式：抬头（logo + 公司、地址、Evelyn Wang、邮箱、网站）→ PROFORMA INVOICE → 右侧 Tax ID: 91320507MA1MMFA46W / Invoice No. / Date → 左侧 Buyer、WhatsApp、Add → 价格表（No. | Description 蓝色粗体 | 贸易术语列头下 Quantity / Unit Price / Total Price）→ 可选 Discount 行 → Total 行 → Remarks 4 条 → 部件表（Component / Details / Qty=According to packing list）→ 银行信息（建设银行，固定）+ 签章。
+- Invoice No.：`GYZP + yyyymmdd + 两位序号`（如 GYZP2026112201），发前请用户确认编号。
+- 描述写法：款式, (size: 宽m*长m*边高m), Covering area, Ridge height, Bay distance, 主型材, Aluminum alloy 6061-T6, Color/PVC 克重, "Specification according to quotation."。CIF 单加一行 "Sea freight to <港口> port"（1 Lot）。
+- Remarks 1 写定金和尾款的具体金额："USD x as deposit, balance (USD y) before shipment."；3 写包装 + CBM + 毛重；4 写 HS Code。
+- 个人客户抬头只写姓名，不加公司/昵称。
+
 ## 尺寸图（报价单/PI 里的 3D Dimension Sketch）
 每做一份报价单或 PI 都要换成本单尺寸的图，模板自带的图不能用。
 1. 查图：`python3 tools/find_drawing.py <系列> <宽x长> [--eave 边高]`（系列直接用 Classic/Wedding/Atrium/Transparent/Exhibition 等）。电脑上没有 python 时，直接在 `Tent 建构图/_索引.csv` 里按"款式,宽,长"查，规则相同
@@ -48,7 +57,7 @@ argument-hint: <系列> <宽x长> [客户名] [国家] [贸易术语] [运费]
 - 抬头用 kb/公司信息.md 的对外联系方式；PI 需要盖公司章。
 - 定金取整数，零头放进尾款。
 - 中庭款图纸：每榀 4 根柱、中间抬高；开间超过 8 个只标总长。人字顶按坡度画。
-- 发文件前提醒用户核对：文件名里的尺寸和贸易条款（EXW/CIF、尺寸是否对应客户）、赠品档位、保修期（2–3 年）。
+- 发文件前提醒用户核对：文件名里的尺寸和贸易条款（EXW/CIF、尺寸是否对应客户）、保修期（2–3 年）。
 - 在 Cowork 云端没法运行 pi.ps1（需要 Windows + Excel）：改用 `tools/报价单_批量生成_LibreOffice.py`（见下节）。
 - 中庭款新版图纸立柱每 5 m 一根（20 m 跨每榀 5 根），旧版"三视图"每榀 4 根，以新版为准。
 
@@ -69,3 +78,9 @@ argument-hint: <系列> <宽x长> [客户名] [国家] [贸易术语] [运费]
 - 图片序号：产品照片 `img {"8": ...}`（用 `原始资料/产品照片/Atrium_白顶透明墙_湖边实景.jpg`）；建构图 `sketch [9, 图, 22]`；工厂照片 `factory [5,6,7,34]`。
 - 这份模板原本是埃及客户的**定制单**（客户要透明顶），只当版式参考。默认款式一律是 **白色 PVC 顶、四周透明墙、黑框**：A9 里 "Top cover: … Transparent  PVC"（两个空格）替换成 White PVC，"Side Wall: … White PVC" 替换成 Transparent PVC。只有客户自己要求透明顶等定制时才按客户说的改。
 - E15 写 "White roof / Clear walls\nBlack frame"；单元格位置和 3.Atrium 模板一样（A37 条款、A39 有效期）；I21 要自己写 `=I16+I20`。
+
+## 改单脚本（2026-11-20）
+`python3 tools/报价单_改单生成_LibreOffice.py jobs.json`：在 `原始资料/报价模板/8.经典白底稿 / 9.工业篷底稿` 上改客户、尺寸、单价、实景图、3D 图、EXW/CIF，一次出多份 xls+pdf，参数见脚本头部。没有 3D 图先用 `tools/画结构图_人字顶截面平面图.py` 画。
+
+## 人民币报价单（2026-11-20 Gwembere）
+在已发的 USD 报价单上改：单价写 RMB（如 210）、小计/Sum/运费/总价格式 "RMB #,##0.00"、表头 "Sub-total (RMB)"；运费人民币 = USD 部分 × 6.6 + 人民币杂费；地锚 USD3/4.5 改 RMB 19.8/29.7；银行信息不动，但提醒用户确认人民币收款账户。

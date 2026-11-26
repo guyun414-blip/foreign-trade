@@ -3,6 +3,7 @@
 # 做的事：以卡片为准更新"全部客户"每一行（阶段、下一步日期、下一步、用途、尺寸、目的港、已报价、最近联系、最近记录、沉默原因），
 #        卡片有但表里没有的客户追加到末尾，重建"紧急待办"表，另存为 客户汇总_分类版_<今天>.xlsx 并删除旧版。
 # 运行前请在 Excel 里关掉汇总表。
+# ⭐ 重点关注：卡片阶段里带"重点关注"（如 已报价（⭐重点关注））→ 分类为 ⭐ 重点关注；"全部客户"行顺序保持不变，所以置顶的客户会一直在第 2 行。
 import openpyxl, re, datetime, os
 from copy import copy
 from pathlib import Path
@@ -68,7 +69,7 @@ for f,p in sorted(cards.items()):
     if f in seen: continue
     c=parse(p); r=last+1; last=r; added+=1
     for col in range(1,20): ws.cell(r,col)._style=copy(ws.cell(2,col)._style)
-    ws.cell(r,1).value=f'=IF(E{r}="流失","⚫ 流失/非客户",IF(ISNUMBER(SEARCH("⚠",H{r})),"🔴 紧急待办",IF(E{r}="待付款","🟠 待付款",IF(F{r}="","⚪ 稍后/低频",IF(F{r}<=TODAY(),"🟡 今天该跟进",IF(F{r}-TODAY()<=3,"🟢 3天内跟进","⚪ 稍后/低频"))))))'
+    ws.cell(r,1).value=f'=IF(ISNUMBER(SEARCH("重点关注",E{r})),"⭐ 重点关注",IF(E{r}="流失","⚫ 流失/非客户",IF(ISNUMBER(SEARCH("⚠",H{r})),"🔴 紧急待办",IF(E{r}="待付款","🟠 待付款",IF(F{r}="","⚪ 稍后/低频",IF(F{r}<=TODAY(),"🟡 今天该跟进",IF(F{r}-TODAY()<=3,"🟢 3天内跟进","⚪ 稍后/低频")))))))'
     vals={2:c['name'],3:c.get('country',''),4:'英语',5:c.get('stage',''),6:d(c.get('next') or ''),7:f'=IF(F{r}="","",F{r}-TODAY())',8:c.get('todo',''),9:c.get('use',''),10:c.get('size',''),11:c.get('port',''),12:c.get('quoted',''),13:c.get('src',''),14:d(c.get('first') or ''),15:lastdate(c['recs']),16:'\n'.join(c['recs'][-3:]),17:c.get('wa',''),18:f,19:c.get('reason','')}
     for col,v in vals.items(): ws.cell(r,col).value=v
 # 看板统计范围
@@ -85,11 +86,12 @@ for r in range(2,last+1):
     if not nm: continue
     todo=str(ws.cell(r,8).value or ''); st=ws.cell(r,5).value
     if st in ('流失','成交'): continue
-    if '⚠' in todo: cat='🔴 紧急待办'
+    if '重点关注' in str(st): cat='⭐ 重点关注'
+    elif '⚠' in todo: cat='🔴 紧急待办'
     elif st=='待付款': cat='🟠 待付款'
     else: continue
     items.append((cat,nm,ws.cell(r,3).value,ws.cell(r,4).value,todo,ws.cell(r,12).value,ws.cell(r,17).value))
-items.sort(key=lambda x:(x[0]!='🔴 紧急待办',str(x[1])))
+items.sort(key=lambda x:({'⭐ 重点关注':0,'🔴 紧急待办':1}.get(x[0],2),str(x[1])))
 for i,it in enumerate(items):
     for col,v in enumerate(it,1):
         uw.cell(4+i,col).value=v

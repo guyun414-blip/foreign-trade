@@ -69,3 +69,15 @@ A-Frame,25,50,1250,4,7.9,2,截面平面图,A-Frame/A-Frame_25x50m_截面平面�
 A-Frame,25,60,1500,4,7.9,2,截面平面图,A-Frame/A-Frame_25x60m_截面平面图_E4_R7.9.png,Claude 自绘 2026-11-20,✓
 A-Frame,20,35,700,4,7.1,2,截面平面图,A-Frame/A-Frame_20x35m_截面平面图_E4_R7.1.png,Claude 自绘 2026-11-20,✓
 A-Frame,20,50,1000,4,7.1,2,截面平面图,A-Frame/A-Frame_20x50m_截面平面图_E4_R7.1.png,Claude 自绘 2026-11-20 透明篷,✓
+A-Frame,25,50,1250,6,10.5,,截面平面图,A-Frame/A-Frame_25x50m_截面平面图_E6_R10.5.png,脚本生成 11-20,体育篷 顶高固定 10.5
+A-Frame,20,30,600,6,10.5,,截面平面图,A-Frame/A-Frame_20x30m_截面平面图_E6_R10.5.png,脚本生成 11-20,体育篷 顶高固定 10.5
+A-Frame,21,30,630,4,7.26,,截面平面图,A-Frame/A-Frame_21x30m_截面平面图_E4_R7.26.png,脚本生成 11-20,按 20 米跨价格
+HighPeak,10,30,300,3,5.5,,3D+立面+平面,其他/HighPeak_10x30m_2x5x30_E3_R5.5.png,脚本生成 11-21,2个5x30尖顶篷拼接 用户给高度
+HeartShaped,15,30,450,4,8.5,2,截面平面图,其他/HeartShaped_15x30m_截面平面图_E4_R8.5.png,Claude 自绘 2026-11-21（按弧形截面平面图版式；顶高 8.5m 按 20 米跨 10m 比例估算，用户同意）,Josh 乌干达 透明桃心形
+A-Frame,20,50,1000,4,7.1,,钢结构 截面平面图,其他/A-Frame_20x50m_钢结构_截面平面图_E4_R7.1.png,Claude 自绘 2026-11-21（脚本改文字：Frame: Steel structure）,Angelina 安哥拉 钢结构工业棚
+A-Frame,50,200,10000,7,14.75,,组合3D图(用户提供),A-Frame/A-Frame_50x200m_E7_组合3D图.jpg,用户11-23提供3张,✓
+A-Frame,50,100,5000,7,14.75,,组合3D图(用户提供),A-Frame/A-Frame_50x100m_E7_组合3D图.jpg,用户11-23提供3张,✓
+A-Frame,52,80,4160,6,10.5,,截面平面图,A-Frame/A-Frame_52x80m_截面平面图_E6_R10.5.png,脚本生成 11-24,体育篷 顶高固定 10.5（Michael Orwe）
+A-Frame,15,40,600,4,6.3,,组合3D图,A-Frame/A-Frame_15x40m_组合3D图.jpg,用户11-24提供3张3D图拼合,✓
+A-Frame,20,20,400,6,10.5,,截面平面图,A-Frame/A-Frame_20x20m_截面平面图_E6_R10.5.png,脚本生成 11-24,体育篷 顶高固定 10.5（Livio）
+A-Frame,40,60,2400,6,10.5,,截面平面图,A-Frame/A-Frame_40x60m_截面平面图_E6_R10.5.png,Sports Tent 40x60m（11-24 脚本画，体育篷）,✓

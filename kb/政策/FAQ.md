@@ -40,3 +40,11 @@ A: Optional raised platform floor: aluminum frame with wooden boards.（不提�
 
 **Q: Can I pay in other currencies?**
 A: We accept USD and RMB.
+
+## 2026-11-21 用户确认
+- **要不要打地基？** 不需要专门打地基，几乎任何地面都能固定：水泥/沥青地用膨胀螺丝，草地/泥地用钢钎地锚，瓷砖/大理石地用配重板。英文："No special foundation is needed. Our tent can be fixed on almost any ground: expansion bolts on concrete or asphalt, steel ground anchors on grass or soil, and weight plates on tiles or marble."
+- **防火/隔音？** PVC 阻燃（B1/M2）没问题；PVC 做不到好的隔音，要隔音推荐玻璃墙。
+- **能装空调吗？** 可以，会预留空调管道开口。
+
+## 2026-11-24 用户确认（设计工程师谷姐）
+- **60 米跨能做吗？** 能做（价格表最大只到 50 米跨，60 米跨要人工定价）。报价前先确认：① 客户写的是米还是英尺（60×100 feet 只有约 18×30 m）② 容纳多少人；③ 边高由谷姐定。英文："Yes, we can make a 60m clear span tent with no poles inside."
